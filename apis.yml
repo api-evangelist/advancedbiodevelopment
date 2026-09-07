@@ -1,17 +1,43 @@
 aid: advancedbiodevelopment
-name: Advancedbiodevelopment
-description: 'Advancedbiodevelopment is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+name: Advanced Bio Development
+description: >-
+  Advanced Bio Development, Inc. (ABD) was a New Jersey beverage and dietary-supplement company
+  headquartered in Englewood Cliffs, NJ. It developed, produced and marketed X2PERFORMANCE, a
+  patented all-natural liquid sports-energy supplement built around ATP, created by founder
+  Dr. Ralph Ferrante as an alternative to conventional performance stimulants, and distributed in
+  part through Anheuser-Busch InBev's AB ONE network. The company sold consumer packaged goods
+  through retail and e-commerce; software was never its product and it never operated a developer
+  program, public API, SDK or developer portal. In March 2023 X2 Performance merged into the
+  Don't Quit! beverage platform — ABD and existing X2 investors became shareholders in Don't Quit!,
+  X2 CEO Mark French took the same role at the combined company, and Keurig Dr Pepper remained
+  majority owner — after which the X2 brand was wound down. The brand domain x2performance.com is
+  no longer controlled by the company: WHOIS lists the registrant organization as HugeDomains.com
+  and the site 302s to a domain-resale listing, while advancedbiodevelopment.com does not resolve.
+  This record is retained as an honest zero — a consumer-packaged-goods company with no API
+  surface, whose only remaining public presence is third-party listings.
 url: https://raw.githubusercontent.com/api-evangelist/advancedbiodevelopment/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+x-status: defunct
+x-status-detail: >-
+  Merged into the Don't Quit! beverage platform in March 2023 (reported by BevNET and Sports
+  Business Journal); the X2PERFORMANCE brand was discontinued. No first-party host survives —
+  x2performance.com 302s to a HugeDomains resale listing and its WHOIS registrant organization is
+  HugeDomains.com, and advancedbiodevelopment.com has no DNS record — so no Website pointer is
+  wired. The EquityZen secondary-market listing this record was harvested from is still live and
+  still markets "X2 Performance" pre-IPO shares three years after the merger.
 specificationVersion: '0.20'
 created: '2026-09-07'
 modified: '2026-09-07'
 tags:
 - Company
+- Beverages
+- Dietary Supplements
+- Consumer Packaged Goods
+- Sports Nutrition
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +45,34 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
+- type: LinkedIn
+  url: https://www.linkedin.com/company/advanced-bio-development
+- type: Successor
+  url: https://dontquit.com/
+- type: SecondaryMarket
   url: https://equityzen.com/company/advancedbiodevelopment
+x-enrichment:
+  date: '2026-09-07'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    Advanced Bio Development made the X2PERFORMANCE sports-energy drink, not software; the brand
+    merged into the Don't Quit! platform in March 2023 and its domain x2performance.com now 302s to
+    a HugeDomains resale listing whose WHOIS registrant organization is HugeDomains.com, while
+    advancedbiodevelopment.com does not resolve at all.
+  evidence:
+  - url: https://x2performance.com/
+    status: 302
+  - url: https://www.hugedomains.com/domain_profile.cfm?d=x2performance.com
+    status: 200
+  - url: https://advancedbiodevelopment.com/
+    status: 0
+  - url: https://equityzen.com/company/advancedbiodevelopment
+    status: 200
+  - url: https://dontquit.com/
+    status: 200
+  checked: '2026-09-07'
